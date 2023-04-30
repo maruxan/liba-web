@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TopNavbar } from ".";
+import { BottomNavbar, TopNavbar } from ".";
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -19,6 +19,7 @@ const Layout = ({ children }: Props) => {
     >
       <TopNavbar />
       {children}
+      <BottomNavbar />
     </div>
   );
 };
