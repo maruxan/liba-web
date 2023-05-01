@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { BottomNavbar, TopNavbar } from ".";
 import { Montserrat } from "next/font/google";
+import { ThemeContext, ThemeContextType } from "@/contexts";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -9,13 +10,11 @@ type Props = {
 };
 
 const Layout = ({ children }: Props) => {
-  const [theme, setTheme] = useState<"design" | "development" | "photography">(
-    "design"
-  );
+  const { theme, switchTheme } = useContext(ThemeContext) as ThemeContextType;
 
   return (
     <div
-      className={`${theme} min-h-screen bg-secondary ${montserrat.className}`}
+      className={`${theme} min-h-screen flex flex-col justify-between bg-secondary ${montserrat.className}`}
     >
       <TopNavbar />
       {children}
