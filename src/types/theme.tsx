@@ -1,1 +1,1 @@
-export type Theme = "design" | "development" | "photogragphy";
+export type Theme = "design" | "development" | "photography";
