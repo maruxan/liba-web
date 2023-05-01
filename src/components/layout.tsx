@@ -1,6 +1,12 @@
 import React, { useContext } from "react";
 import clsx from "clsx";
-import { BottomNavbar, CarouselNavigation, SocialLinks, TopNavbar } from ".";
+import {
+  BottomNavbar,
+  CarouselNavigation,
+  PageTitle,
+  SocialLinks,
+  TopNavbar,
+} from ".";
 import { Montserrat } from "next/font/google";
 import { ThemeContext, ThemeContextType } from "@/contexts";
 
@@ -18,16 +24,16 @@ const Layout = ({ children }: Props) => {
       className={clsx(
         theme,
         montserrat.className,
-        "min-h-screen flex flex-col justify-between bg-secondary"
+        "min-h-screen flex flex-col justify-between"
       )}
     >
       <TopNavbar />
-      <div className="flex justify-between items-center">
-        <div className="basis-24">
+      <div className="flex justify-between items-center grow">
+        <div className="basis-28">
           <CarouselNavigation />
         </div>
-        {children}
-        <div className="basis-24">
+        <main className="basis-full self-stretch py-20">{children}</main>
+        <div className="basis-28">
           <SocialLinks />
         </div>
       </div>
