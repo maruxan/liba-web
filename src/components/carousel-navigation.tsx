@@ -15,7 +15,7 @@ const CarouselNavigation = () => {
   ) as ThemeContextType;
 
   return (
-    <div className="flex flex-col justify-center items-center w-20">
+    <div className="flex flex-col justify-center items-center">
       <button onClick={prevTheme}>
         <BsFillArrowUpCircleFill className="text-primary w-7 h-7 my-6" />
       </button>
