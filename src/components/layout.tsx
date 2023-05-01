@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import clsx from "clsx";
-import { BottomNavbar, TopNavbar } from ".";
+import { BottomNavbar, CarouselNavigation, TopNavbar } from ".";
 import { Montserrat } from "next/font/google";
 import { ThemeContext, ThemeContextType } from "@/contexts";
 
@@ -22,7 +22,10 @@ const Layout = ({ children }: Props) => {
       )}
     >
       <TopNavbar />
-      {children}
+      <div className="flex justify-between">
+        <CarouselNavigation />
+        {children}
+      </div>
       <BottomNavbar />
     </div>
   );
