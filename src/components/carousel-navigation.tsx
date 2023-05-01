@@ -1,5 +1,9 @@
 import React, { useContext } from "react";
 import clsx from "clsx";
+import {
+  BsFillArrowUpCircleFill,
+  BsFillArrowDownCircleFill,
+} from "react-icons/bs";
 import { ThemeContext, ThemeContextType } from "@/contexts";
 
 const activeClassName =
@@ -12,11 +16,8 @@ const CarouselNavigation = () => {
 
   return (
     <div className="flex flex-col justify-center items-center w-20">
-      <button
-        className="w-7 h-7 rounded-full bg-primary mb-5 flex items-center justify-center shadow-md"
-        onClick={prevTheme}
-      >
-        <span className="text-secondary font-bold text-lg">&uarr;</span>
+      <button onClick={prevTheme}>
+        <BsFillArrowUpCircleFill className="text-primary w-7 h-7 my-6" />
       </button>
 
       <button
@@ -43,11 +44,8 @@ const CarouselNavigation = () => {
         onClick={() => switchTheme("photography")}
       />
 
-      <button
-        className="w-7 h-7 rounded-full bg-primary mt-5 flex items-center justify-center shadow-md"
-        onClick={nextTheme}
-      >
-        <span className="text-secondary font-bold text-lg">&darr;</span>
+      <button onClick={nextTheme}>
+        <BsFillArrowDownCircleFill className="text-primary w-7 h-7 my-6" />
       </button>
     </div>
   );
