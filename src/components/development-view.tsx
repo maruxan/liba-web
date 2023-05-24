@@ -2,14 +2,14 @@ import React from "react";
 import Image from "next/image";
 import { CgArrowLongRight } from "react-icons/cg";
 import { PageTitle, Subtitle } from ".";
-import bgImage from "public/design-bg-image.png";
+import bgImage from "public/development-bg-image.png";
 
-const DesignView = () => {
+const DevelopmentView = () => {
   // TODO: work portfolio
   const handleSeeWork = () => { };
 
   return (
-    <div className="flex flex-col justify-between h-full">
+    <div className="flex flex-col justify-between items-center h-full">
       <Image
         src={bgImage}
         placeholder="blur"
@@ -18,13 +18,9 @@ const DesignView = () => {
         fill
       />
 
-      <div className="max-w-xl">
-        <PageTitle>design that gives meaning</PageTitle>
-      </div>
-      <div className="self-end max-w-md text-right flex flex-col gap-4 items-end">
-        <Subtitle>
-          we craft the lenguage that speaks your brand identity
-        </Subtitle>
+      <PageTitle>modern world solutions</PageTitle>
+      <div className="flex flex-col gap-4 items-center">
+        <Subtitle>we are passionate about problem solving</Subtitle>
         <button
           className="flex gap-3 items-center text-4xl text-primary font-bold"
           onClick={handleSeeWork}
@@ -37,4 +33,4 @@ const DesignView = () => {
   );
 };
 
-export default DesignView;
+export default DevelopmentView;

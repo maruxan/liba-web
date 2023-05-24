@@ -7,3 +7,4 @@ export { default as PageTitle } from "./page-title";
 export { default as Subtitle } from "./subtitle";
 
 export { default as DesignView } from "./design-view";
+export { default as DevelopmentView } from "./development-view";
