@@ -8,3 +8,4 @@ export { default as Subtitle } from "./subtitle";
 
 export { default as DesignView } from "./design-view";
 export { default as DevelopmentView } from "./development-view";
+export { default as PhotographyView } from "./photography-view";

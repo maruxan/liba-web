@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { DesignView, DevelopmentView } from "@/components";
+import { DesignView, DevelopmentView, PhotographyView } from "@/components";
 import { ThemeContext, ThemeContextType } from "@/contexts";
 
 export default function Home() {
@@ -8,6 +8,7 @@ export default function Home() {
     <>
       {theme === "design" && <DesignView />}
       {theme === "development" && <DevelopmentView />}
+      {theme === "photography" && <PhotographyView />}
     </>
   );
 }
