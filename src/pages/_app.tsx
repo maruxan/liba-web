@@ -6,9 +6,7 @@ import { ThemeProvider } from "@/contexts";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Component {...pageProps} />
     </ThemeProvider>
   );
 }
