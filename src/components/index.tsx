@@ -5,6 +5,7 @@ export { default as CarouselNavigation } from "./carousel-navigation";
 export { default as SocialLinks } from "./social-links";
 export { default as PageTitle } from "./page-title";
 export { default as Subtitle } from "./subtitle";
+export { default as Arrow } from "./arrow";
 
 export { default as DesignView } from "./design-view";
 export { default as DevelopmentView } from "./development-view";
