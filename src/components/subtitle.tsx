@@ -1,11 +1,23 @@
 import React from "react";
+import clsx from "clsx";
 
 type Props = {
   children: string;
+  color?: "primary" | "white" | "black";
 };
 
-const Subtitle = ({ children }: Props) => {
-  return <h2 className="font-bold text-4xl text-primary">{children}</h2>;
+const fontColorClasses = {
+  primary: "text-primary",
+  white: "text-white",
+  black: "text-black",
+};
+
+const Subtitle = ({ children, color = "primary" }: Props) => {
+  return (
+    <h2 className={clsx("font-bold text-4xl", fontColorClasses[color])}>
+      {children}
+    </h2>
+  );
 };
 
 export default Subtitle;
