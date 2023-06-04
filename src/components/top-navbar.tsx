@@ -1,11 +1,9 @@
+import Link from "next/link";
 import React from "react";
 
 const TopNavbar = () => {
   const handleAboutUs = () => {
     console.log("about us...");
-  };
-  const handleContact = () => {
-    console.log("contact...");
   };
 
   return (
@@ -17,10 +15,12 @@ const TopNavbar = () => {
             ABOUT US
           </button>
         </li>
-        <li className="font-bold text-lg bg-primary text-secondary py-1 px-6 rounded-xl shadow-md">
-          <button type="button" onClick={handleContact}>
-            CONTACT
-          </button>
+        <li>
+          <Link href="/contact">
+            <div className="font-bold text-lg bg-primary text-secondary py-1 px-6 rounded-xl shadow-md">
+              CONTACT
+            </div>
+          </Link>
         </li>
       </ul>
     </div>

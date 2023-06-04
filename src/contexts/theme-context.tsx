@@ -35,7 +35,7 @@ export const ThemeProvider = ({ children }: Props) => {
     <ThemeContext.Provider
       value={{ theme, themes, switchTheme: setTheme, nextTheme, prevTheme }}
     >
-      {children}
+      <div data-theme={theme}>{children}</div>
     </ThemeContext.Provider>
   );
 };

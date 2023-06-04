@@ -14,37 +14,23 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("tailwindcss-themer")({
-      themes: [
-        {
-          name: "design",
-          extend: {
-            colors: {
-              primary: "#EAA546",
-              secondary: "#0070B8",
-            },
-          },
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        design: {
+          primary: "#EAA546",
+          secondary: "#0070B8",
         },
-        {
-          name: "development",
-          extend: {
-            colors: {
-              primary: "#E44F72",
-              secondary: "#EFFAB0",
-            },
-          },
+        development: {
+          primary: "#E44F72",
+          secondary: "#EFFAB0",
         },
-        {
-          name: "photography",
-          extend: {
-            colors: {
-              primary: "#F9D846",
-              secondary: "#1D8D22",
-            },
-          },
+        photography: {
+          primary: "#F9D846",
+          secondary: "#1D8D22",
         },
-      ],
-    }),
-  ],
+      },
+    ],
+  },
 };
