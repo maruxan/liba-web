@@ -1,20 +1,12 @@
 import React from "react";
-import clsx from "clsx";
-import { Color, fontColorClasses } from "@/types";
 
 type Props = {
-  children: string;
-  color?: Color;
+  children: string | JSX.Element;
 };
 
-const PageTitle = ({ children, color = "primary" }: Props) => {
+const PageTitle = ({ children }: Props) => {
   return (
-    <h1
-      className={clsx(
-        "font-black text-3xl md:text-6xl uppercase drop-shadow-2xl",
-        fontColorClasses[color]
-      )}
-    >
+    <h1 className="text-primary font-black text-3xl md:text-6xl uppercase drop-shadow-2xl">
       {children}
     </h1>
   );
