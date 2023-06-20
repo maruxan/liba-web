@@ -1,15 +1,10 @@
 import React from "react";
 import clsx from "clsx";
+import { Color, fontColorClasses } from "@/types";
 
 type Props = {
   children: string;
-  color?: "primary" | "white" | "black";
-};
-
-const fontColorClasses = {
-  primary: "text-primary",
-  white: "text-white",
-  black: "text-black",
+  color?: Color;
 };
 
 const PageTitle = ({ children, color = "primary" }: Props) => {
