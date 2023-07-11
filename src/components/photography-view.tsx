@@ -6,7 +6,7 @@ import bgImage from "public/photography-bg-image.png";
 
 const PhotographyView = () => {
   // TODO: work portfolio
-  const handleSeeWork = () => { };
+  const handleSeeWork = () => {};
 
   return (
     <div className="flex flex-col justify-end items-end gap-24 h-full">
@@ -16,6 +16,7 @@ const PhotographyView = () => {
         alt="background image"
         className="absolute z-[-1] object-cover"
         fill
+        priority
       />
 
       <PageTitle>real life framing</PageTitle>

@@ -6,7 +6,7 @@ import bgImage from "public/design-bg-image.png";
 
 const DesignView = () => {
   // TODO: work portfolio
-  const handleSeeWork = () => { };
+  const handleSeeWork = () => {};
 
   return (
     <div className="flex flex-col justify-between h-full">
@@ -16,6 +16,7 @@ const DesignView = () => {
         alt="background image"
         className="absolute z-[-1] object-cover"
         fill
+        priority
       />
 
       <div className="max-w-xl">

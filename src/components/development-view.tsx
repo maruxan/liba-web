@@ -6,7 +6,7 @@ import bgImage from "public/development-bg-image.png";
 
 const DevelopmentView = () => {
   // TODO: work portfolio
-  const handleSeeWork = () => { };
+  const handleSeeWork = () => {};
 
   return (
     <div className="flex flex-col justify-between items-center h-full">
@@ -16,6 +16,7 @@ const DevelopmentView = () => {
         alt="background image"
         className="absolute z-[-1] object-cover"
         fill
+        priority
       />
 
       <PageTitle>modern world solutions</PageTitle>
