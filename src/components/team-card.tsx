@@ -12,7 +12,7 @@ type Props = {
 
 const TeamCard = ({ imageSrc, role, name }: Props) => {
   return (
-    <div className="relative h-24">
+    <div className="relative h-24 mt-10 ml-14 max-w-xs">
       <Image
         src={imageSrc}
         alt="Team member photo"
@@ -20,7 +20,7 @@ const TeamCard = ({ imageSrc, role, name }: Props) => {
         height={96}
         className="rounded-full absolute -top-8 -left-12 z-[2]"
       />
-      <div className="bg-[#ebebeb] rounded-lg shadow-xl h-full flex flex-col justify-center pl-16 pr-16">
+      <div className="bg-[#ebebeb] rounded-lg shadow-xl h-full flex flex-col justify-center pl-16 pr-10">
         <div
           className={clsx(
             "uppercase font-bold text-sm tracking-wider leading-none",
