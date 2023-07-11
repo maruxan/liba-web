@@ -1,12 +1,6 @@
 import React, { useContext } from "react";
 import clsx from "clsx";
-import {
-  BottomNavbar,
-  CarouselNavigation,
-  PageTitle,
-  SocialLinks,
-  TopNavbar,
-} from ".";
+import { BottomNavbar, CarouselNavigation, SocialLinks, TopNavbar } from ".";
 import { Montserrat } from "next/font/google";
 import { ThemeContext, ThemeContextType } from "@/contexts";
 
