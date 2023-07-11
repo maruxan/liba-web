@@ -7,6 +7,7 @@ export { default as PageTitle } from "./page-title";
 export { default as Subtitle } from "./subtitle";
 export { default as Arrow } from "./arrow";
 export { default as EmailInput } from "./email-input";
+export { default as TeamCard } from "./team-card";
 
 export { default as DesignView } from "./design-view";
 export { default as DevelopmentView } from "./development-view";
