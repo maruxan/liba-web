@@ -26,7 +26,7 @@ export default function About() {
         </span>
       </Subtitle>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mt-10 mb-16">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mt-10 mb-16 max-w-6xl mx-auto">
         <TeamCard name="Greg Webb" role="design" imageSrc={designerImg} />
         <TeamCard name="Philip Hawkins" role="development" imageSrc={devImg} />
         <TeamCard
