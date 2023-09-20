@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 import { BottomNavbar, CarouselNavigation, SocialLinks, TopNavbar } from '.';
 import { Montserrat } from 'next/font/google';
 import { ThemeContext, ThemeContextType } from '@/contexts';
@@ -22,13 +23,17 @@ const Layout = ({ children }: Props) => {
       )}>
       <TopNavbar />
       <div className="flex justify-between items-center grow">
-        <div className="basis-28">
+        <motion.div
+          animate={{ x: [-100, 0], transition: { delay: 0.5 } }}
+          className="basis-28">
           <CarouselNavigation />
-        </div>
+        </motion.div>
         <main className="basis-full self-stretch py-20">{children}</main>
-        <div className="basis-28">
+        <motion.div
+          animate={{ x: [100, 0], transition: { delay: 0.5 } }}
+          className="basis-28">
           <SocialLinks />
-        </div>
+        </motion.div>
       </div>
       <BottomNavbar />
     </div>
