@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import { BottomNavbar, CarouselNavigation, SocialLinks, TopNavbar } from '.';
 import { Montserrat } from 'next/font/google';
 import { ThemeContext, ThemeContextType } from '@/contexts';
-import { motion } from 'framer-motion';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
