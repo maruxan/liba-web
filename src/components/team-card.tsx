@@ -26,7 +26,7 @@ const TeamCard = ({ imageSrc, role, name }: Props) => {
             "uppercase font-bold text-sm tracking-wider leading-none",
             role === "design" && "text-[#0070B8]",
             role === "development" && "text-[#EAA546]",
-            role === "photography" && "text-[#1D8D22]"
+            role === "photography" && "text-[#1D8D22]",
           )}
         >
           {role === "design" && "designer"}

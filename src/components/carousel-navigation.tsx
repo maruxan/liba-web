@@ -11,7 +11,7 @@ const activeClassName =
 
 const CarouselNavigation = () => {
   const { theme, switchTheme, nextTheme, prevTheme } = useContext(
-    ThemeContext
+    ThemeContext,
   ) as ThemeContextType;
 
   return (
@@ -23,7 +23,7 @@ const CarouselNavigation = () => {
       <button
         className={clsx(
           "w-3 h-3 rounded-full bg-primary -mb-1",
-          theme === "design" && activeClassName
+          theme === "design" && activeClassName,
         )}
         onClick={() => switchTheme("design")}
       />
@@ -31,7 +31,7 @@ const CarouselNavigation = () => {
       <button
         className={clsx(
           "w-3 h-3 rounded-full bg-primary -mb-1 -mt-1",
-          theme === "development" && activeClassName
+          theme === "development" && activeClassName,
         )}
         onClick={() => switchTheme("development")}
       />
@@ -39,7 +39,7 @@ const CarouselNavigation = () => {
       <button
         className={clsx(
           "w-3 h-3 rounded-full bg-primary -mt-1",
-          theme === "photography" && activeClassName
+          theme === "photography" && activeClassName,
         )}
         onClick={() => switchTheme("photography")}
       />

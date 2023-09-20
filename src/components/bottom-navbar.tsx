@@ -13,7 +13,7 @@ const BottomNavbar = () => {
           onClick={() => switchTheme("design")}
           className={clsx(
             "font-bold text-lg text-primary",
-            theme === "design" && "border-b-primary border-b-2"
+            theme === "design" && "border-b-primary border-b-2",
           )}
         >
           DESIGN
@@ -23,7 +23,7 @@ const BottomNavbar = () => {
           onClick={() => switchTheme("development")}
           className={clsx(
             "font-bold text-lg text-primary",
-            theme === "development" && "border-b-primary border-b-2"
+            theme === "development" && "border-b-primary border-b-2",
           )}
         >
           DEVELOPMENT
@@ -33,7 +33,7 @@ const BottomNavbar = () => {
           onClick={() => switchTheme("photography")}
           className={clsx(
             "font-bold text-lg text-primary",
-            theme === "photography" && "border-b-primary border-b-2"
+            theme === "photography" && "border-b-primary border-b-2",
           )}
         >
           PHOTOGRAPHY
